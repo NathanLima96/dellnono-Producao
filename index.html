@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="title">Produção</h1>
+  <main class="container-inputs">
+    <label for="text">Produto</label>
+    <input type="text" name="produto" id="produto">
+    <label for="KG">Quantidade em KG</label>
+    <input type="number" name="KG" id="KG">
+    <label for="KG">Tamanho do recipiente em KG</label>
+    <input type="number" name="recipiente" id="recipiente">
+    <label for="Unidades">Unidades por saco</label>
+    <input type="number" name="unidades-saco" id="unidades-saco">
+    <label for="Unidades">Unidades por caixa</label>
+    <input type="number" name="unidades-caixa" id="unidades-caixa">
+    <button id="botao" class="botao" onclick="calcular()">Calcular</button>
+  </main>
+  <div class="container-resultados hide " id="container-resultados">
+    <span id="resultado" class="resultado" onclick="copiar()">teste </span>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
